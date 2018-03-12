@@ -35,8 +35,8 @@ HTML 소스<br>
 <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
 <!-- script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script -->
 <script>
-var contractAddress = '0xE179F2Df99A21EEB095F508a67c2162845e12dF2';
-var abi = [{"constant":false,"inputs":[{"name":"x","type":"uint256"}],"name":"set","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"get","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"}];
+var contractAddress = '0x162e61556a62f5b8ee4b08fd99f6cb4ec03c9607';
+var abi = [{"constant": true,"inputs": [],"name": "storedData","outputs": [{"name": "","type": "string"}],"payable": false,"type": "function","stateMutability": "view"},{"constant": true,"inputs": [],"name": "get","outputs": [{"name": "","type": "string"}],"payable": false,"type": "function","stateMutability": "view"},{"constant": false,"inputs": [{"name": "x","type": "string"}],"name": "set","outputs": [],"payable": false,"type": "function","stateMutability":"nonpayable"}];
 var simpleStorageContract;
 var simpleStorage;
 
